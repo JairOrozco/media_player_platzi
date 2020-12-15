@@ -1,7 +1,3 @@
-const video = document.getElementById("movie");
-const button = document.getElementById("play-pause");
-const player = new MediaPlayer({el: video});
-
 
 function MediaPlayer (config) {
     this.media = config.el;
@@ -23,4 +19,4 @@ MediaPlayer.prototype.togglePlay = function() {
     }
 }
 
-button.onclick = () => player.togglePlay();
+export default MediaPlayer;
